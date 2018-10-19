@@ -13,3 +13,13 @@ function reverse(str){
   return reversed;
 }
 console.log(reverse("apple"));
+
+//another way
+function reverse(str){
+  let reversed = '';
+  let charArray = str.split('');//splits the string into a array of 1 character each
+  //console.log(charArray);
+  reversed = charArray.reverse().join('');// uses array.reverse() and array.join()
+  return reversed;
+}
+reverse('hello');
