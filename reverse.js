@@ -7,9 +7,9 @@
 //   reverse('Greetings!') === '!sgniteerG'
 function reverse(str){
   let reversed ='';
-  for (let character of str){
+  for (let character of str){// if 'in' is used the index is taken not the specific character
     reversed = character + reversed;
   }
   return reversed;
 }
-reverse("apple");
+console.log(reverse("apple"));
