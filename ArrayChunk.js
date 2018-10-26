@@ -26,3 +26,16 @@ function chunk(array, size)
 chunk([1, 2, 3, 4, 5], 3);
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3);
 // chunk([1, 2, 3, 4, 5], 10)
+
+
+//USING SLICE FUNCTION
+function chunk(array, size){
+  let resultArr =[];
+  
+  for ( let i= 0; i< array.length; i+=size){
+  let nestArr = array.slice(i,i+size);
+  resultArr.push(nestArr);
+  }
+
+console.log(resultArr);
+}
