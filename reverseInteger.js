@@ -12,7 +12,7 @@
 function reverseInt(num){
 //all these methods work only on strings. hence converting to string
   revNum = String(num).split('').reverse().join('');//converting the number to string, splitting ,reversing and joining 
-  console.log(revNum);
+  return Number(revNum);
 }
 
 reverseInt(15);
